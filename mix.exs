@@ -9,7 +9,7 @@ defmodule Issues.MixProject do
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
       name: "Issues",
-      source_url: "https://github.com/pragdave/issues",
+      source_url: "https://github.com/museop/issues",
       deps: deps()
     ]
   end
