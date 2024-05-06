@@ -47,8 +47,6 @@ defmodule Issues.CLI do
   end
 
   def process({user, project, count}) do
-    # import Issues.TableFormater, only: [print_table_for_columns: 2]
-
     Issues.GithubIssues.fetch(user, project)
     |> decode_response()
     |> sort_into_descending_order()
